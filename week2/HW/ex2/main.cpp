@@ -22,6 +22,7 @@ a main.cpp file that shows how the methods and global functions can be used.
 
 */
 
+<<<<<<< HEAD
 int main()
 {
     EnemyWave A, B;
@@ -36,5 +37,21 @@ int main()
     std::cout << B.getName() << "\n";
     B.setHP(0);
     std::cout << compareMoney(C, B) << "\n";
+=======
+#include "GlobsalFunctions.h"
+
+int main()
+{
+    Wave w1, w2;
+
+	w1.SetName("W1");
+	w2.SetName("W2");
+
+	w1.SetNumberOfEnemies(2);
+	w2.SetNumberOfEnemies(20);
+
+	int res = CompareWavesNumberOfEnemies(w1, w2);
+    printf("%d", res);
+>>>>>>> 8a1b33f28502236183047aa8be67dcdd054c3092
     return 0;
 }
